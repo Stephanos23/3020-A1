@@ -1,11 +1,22 @@
 body {
   background-color: white;
 }
+header, .full-width{
+  width: 100%;
+  height: 90px;
+  background: grey;
+}
+.wrap{
+  width: 80%;
+  max-width: 24em;
+  margin: 0 auto;
+  padding: 0.25em 0.625em;
+}
 
 img.logo{
   display: inline-block;
   padding-left: 25px;
-  padding-top: 15px;
+  padding-top: 10px;
   background-position: left top;
   width: 200px;
   height: auto;
@@ -48,7 +59,45 @@ li a{
 }
 li a:hover:not(.active){
   background-color: powderblue;
+  border-radius: 12px;
 }
 .active{
   background-color: powderblue;
+  border-radius: 12px;
+}
+div.product{
+  display: inline;
+}
+div.gallery{
+  display: inline-block;
+}
+img.main{
+  position: absolute;
+  width: 450px;
+  height: auto;
+  border: 3px solid black;
+  top: 230px;
+  left: 200px;
+}
+img.gallery{
+  position: relative;
+  width: 75px;
+  height: auto;
+  border: 1px solid black;
+  top: 85px;
+  left: 95px;
+}
+div.title{
+  width: 30%;
+  display: block;
+  word-wrap: break-word;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+div.nav{
+  display: block;
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 10px;
 }
